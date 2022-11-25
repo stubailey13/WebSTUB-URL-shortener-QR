@@ -4,10 +4,6 @@ import functions
 Web = Query()
 db = TinyDB("urls.json")
 
-# -----------
-# Functions:
-# -----------
-
 # Welcome Message
 print("------------------------------")
 print("Welcome to WedSTUB")
