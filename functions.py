@@ -34,7 +34,8 @@ def generate_qr():
 def url_stub():
     long_url = input("Input URL: ")
     alphabet = string.ascii_letters + string.digits
-    short_url = ''.join(secrets.choice(alphabet) for i in range(7))
+    short_url_suffix = ''.join(secrets.choice(alphabet) for i in range(7))
+    short_url = "web.stub/" + short_url_suffix
     db.insert({'long_url': long_url, 'short_url': short_url})
     print("Short URL STUB successfully created: " + short_url)
     return
